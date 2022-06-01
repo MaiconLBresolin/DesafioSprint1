@@ -1,0 +1,73 @@
+body{
+	background: #e5e5e5;
+}
+
+.retangulo{
+	width: 620px;
+	height: 763px;
+	margin-top: 293px;
+	margin-bottom: 372px;
+	margin-left: 192px;
+	margin-right: 188px;
+	border-radius: 20px;
+	background: white;
+	display: block;
+	flex-wrap: wrap;
+}
+
+.logo{
+	width: 213px;
+	height: 124px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 28px;
+	margin-top: 30px;
+	margin-bottom: 11px;
+	margin-right: 210px;
+	margin-left: 197px;
+}
+
+.titulo{
+	font-family: "Inter", Helvetica, Arial, sans-serif;;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-left: 175px;
+	align-items: center;
+	padding-top: 15px;
+}
+
+.input{
+	font-size: 14px;
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+
+}
+
+.label{
+	padding-left: 46px;
+	color: #767676;
+	font-size: 20px;
+}
+
+.input-name{
+	display: block;
+	width: 515px;
+	height: 40px;
+	border-radius: 4px;
+	border: 2px solid #aaaaaa;
+	padding: 11px 12px;
+	margin-left: 46px;
+	margin-right: 59px;
+	margin-bottom: 60px;
+}
+
+.inputstandart{
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	display: block;
+	width: 330px;
+	height: 40px;
+	border: 2px solid #aaaaaa;
+	padding: 11px 12px;
+	margin-left: 45px;
+	margin-bottom: ;
+}
