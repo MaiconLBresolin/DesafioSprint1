@@ -1,74 +1,152 @@
-body{
-	background: #e5e5e5;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
 }
 
-.rectangle{
-	width: 620px;
-	height: 763px;
-	margin-top: 293px;
-	margin-bottom: 372px;
-	margin-left: 192px;
-	margin-right: 188px;
-	border-radius: 20px;
-	background: white;
-	display: block;
-	flex-wrap: wrap;
+html,
+body {
+  height: 100%;
 }
 
-.logo{
-	width: 213px;
-	height: 124px;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 25px;
-	margin-right: 210px;
-	margin-left: 197px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
 }
 
-.titulo{
-	font-family: "Inter", Helvetica, Arial, sans-serif;;
-	font-size: 36px;
-	font-weight: 600;
-	line-height: 24px;
-	margin-left: 175px;
-	align-items: center;
-	margin-top: 36px;
+.card {
+  background-color: #fff;
+  border-radius: 0.313rem;
+  height: 97%;
+  width: 80%;
+  max-width: 38.75rem;
+  max-height: 47.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
 }
 
-.input{
-	font-size: 14px;
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
-
+.head {
+  padding-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.label{
-	padding-left: 46px;
-	color: #767676;
-	font-size: 14px;
-	line-height: 16px;
+.title {
+  font-size: 2.25rem;
+  line-height: 1.5rem;
+  padding: 0.938rem;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 3.125rem;
 }
 
-.input-name{
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	display: grid;
-	width: 515px;
-	height: 40px;
-	border-radius: 4px;
-	margin-left: 46px;
-	margin-right: 59px;
-	margin-bottom: 72px;
-	border: 2px solid #aaaaaa;
-
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.inputstandart{
-	font-family: "Nunito", Helvetica, Arial, sans-serif;
-	display: block;
-	width: 330px;
-	height: 40px;
-	margin-left: 45px;
-	margin-bottom: ;
-	border-radius: 4px;
-	border: 2px solid #aaaaaa;
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxContainer > label {
+  color: #111111;
+  padding-left: 0.5rem;
+}
+
+.checkboxContainer > input {
+  width: auto;
+}
+
+.registerForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2.5rem 1.375rem;
+  grid-template-areas:
+    "fullname fullname"
+    "email phone"
+    "password birthday"
+    "acceptTerms registerButton";
+  align-items: center;
+}
+
+.fullname {
+  grid-area: fullname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.password {
+  grid-area: password;
+}
+
+.birthday {
+  grid-area: birthday;
+}
+
+.acceptTerms {
+  grid-area: acceptTerms;
+}
+
+.registerButton {
+  grid-area: registerButton;
+  display: flex;
+  justify-content: flex-end;
+}
+
+input {
+  border: 0.125rem solid #aaaaaa;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+  width: 100%;
+}
+
+label {
+  color: #767676;
+}
+
+.button{
+  width: 5.063rem;
+  height: 2.5rem;
+  max-width: 5.063rem;
+  max-height: 2.5rem;
+  border-radius: 0.625rem;
+  border-style: none;
+  background-color: #0DBDBD;
+  color: #FFFFFF;
+}
+
+@media (max-width: 650px){
+  .container{
+    background-color: #ffffff;
+  }
+
+  .form{  
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 3.75rem 2.5rem; 
+    grid-template-areas: 
+    "fullName fullName"
+    "email email"
+    "password password"
+    "phone birthday"
+    "acceptTerms acceptTerms"
+    "registerButton registerButton"; 
+  }
 }
