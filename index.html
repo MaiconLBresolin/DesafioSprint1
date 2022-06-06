@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Intern Sign Up</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="widht=device-widht, initial-scale=1", shrink-to-fit="no">
-		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<div class="rectangle">
-			<header>
-				<div>
-					<h1 class="logo"><img src="data 1.png" alt="Logo da Empresa Alvo"></h1>
-				</div>
-				<div>
-					<p class="titulo">Intern Sign Up</p>
-				</div>
-			</header>
-			<form  class="input">
-				<label for="fullname" class="label">Full name *</label>
-				<input type="text" id="fullname" class="input-name">
+  <head>
+    <title>Intern Sign Up</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="widht=device-widht, initial-scale=1"
+      shrink-to-fit="no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="container">
+    <div class="card">
+      <div class="head">
+        <img src="./data 1.png" />
+        <h1 class="title">Intern sign up</h1>
+      </div>
 
-				<label for="email" class="label">Email *</label>
-				<input type="text" id="email" class="inputstandart" required placeholder="foo@bar.com">
-
-				<label for="phone" class="label">Phone</label>
-				<input type="phone" id="phone" class="inputstandart" required placeholder="(XX)XXXXX-XXXX">
-
-				<label for="password" class="label">Password *</label>
-				<input type="text" id="password" class="inputstandart" required>
-
-				<label for="birthday" class="label">Birthday *</label>
-				<input type="date" id="birthday" class="inputstandart" required>
-			</form>
-		</div>
-	</body>
+      <form class="registerForm">
+        <div class="inputContainer fullname">
+          <label for="fullname">Full name *</label>
+          <input type="text" id="fullname" required/>
+        </div>
+        <div class="inputContainer email">
+          <label for="email">Email *</label>
+          <input type="text" id="email" required placeholder="foo@bar.com" />
+        </div>
+        <div class="inputContainer phone">
+          <label for="phone">Phone</label>
+          <input
+            type="phone"
+            id="phone"
+            required
+            placeholder="(83)00000-0000"
+          />
+        </div>
+        <div class="inputContainer password">
+          <label for="password">Password *</label>
+          <input type="text" id="password" minlength="6" maxlength="9" required />
+        </div>
+        <div class="inputContainer birthday">
+          <label for="birthday">Birthday *</label>
+          <input type="date" id="birthday" required />
+        </div>
+        <div class="checkboxContainer acceptTerms">
+          <input type="checkbox" checked id="accept" />
+          <label for="accept">I accept the terms and privacy</label>
+        </div>
+        <div class="registerButton">
+          <button type="submit" class="button">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
